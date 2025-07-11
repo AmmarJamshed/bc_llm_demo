@@ -10,7 +10,7 @@ def send_transaction(encrypted_query, from_address, private_key):
         'nonce': nonce,
         'to': from_address,  # Still sending to self (replace later)
         'value': 0,
-        'gas': 21000,
+        'gas': 50000,
         'gasPrice': w3.to_wei('5', 'gwei'),
         'data': encrypted_query.encode('utf-8')
     }
