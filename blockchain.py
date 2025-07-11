@@ -1,7 +1,7 @@
 from web3 import Web3
 import os
 
-rpc_url = os.getenv("RPC_URL", "https://anryton-rpc-url.com")  # Replace with real Anryton RPC
+rpc_url = os.getenv("RPC_URL", "jsrpc.anryton.com")  # Replace with real Anryton RPC
 w3 = Web3(Web3.HTTPProvider(rpc_url))
 
 def send_transaction(encrypted_query, from_address, private_key):
