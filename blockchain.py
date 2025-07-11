@@ -5,7 +5,7 @@ rpc_url = os.getenv("RPC_URL", "https://anryton-rpc-url.com")  # Replace with re
 w3 = Web3(Web3.HTTPProvider(rpc_url))
 
 def send_transaction(encrypted_query, from_address, private_key):
-    nonce = w3.eth.getTransactionCount(from_address)
+    nonce = w3.eth.get_transaction_count(from_address)
     tx = {
         'nonce': nonce,
         'to': from_address,  # For demo; replace with Anryton smart contract later
