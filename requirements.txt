@@ -1,4 +1,2 @@
-fastapi
-uvicorn
-vertexai
-google-cloud-aiplatform
+streamlit
+cryptography
